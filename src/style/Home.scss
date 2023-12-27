@@ -1,0 +1,31 @@
+$color1: #ffa200;
+$color2: #6eda78;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, $color2, $color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+
+  .item1,
+  .item2 {
+    width: 15rem;
+    height: 6rem;
+    background-color: white;
+    padding: 1.2rem;
+    cursor: pointer;
+  }
+  p {
+    margin-top: 1.5rem;
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .switch-lang-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
