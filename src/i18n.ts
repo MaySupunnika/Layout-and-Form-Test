@@ -8,17 +8,23 @@ const resources = {
   en: {
     translation: {
       Test: "Test",
+      Home: "HomePage",
       Topic1: "Layout & Style",
       Topic2: "Form & Table",
+      "Move Shape": "Move Shape",
+      "Move Position": "Move Position",
       name: "Name",
     },
   },
   th: {
     translation: {
       Test: "แบบทดสอบที่",
-      name: "ชื่อ",
+      Home: "หน้าหลัก",
       Topic1: "การจัดการหน้าเว็บ",
       Topic2: "การจัดการหน้าฟอร์ม",
+      "Move Shape": "เลื่อนรูปแบบ",
+      "Move Position": "เลื่อนตำแหน่ง",
+      name: "ชื่อ",
     },
   },
 };

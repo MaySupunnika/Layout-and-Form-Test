@@ -1,0 +1,108 @@
+$color1: #ffa200;
+$color2: #6eda78;
+
+.test1-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0.7rem;
+  background-image: linear-gradient(to right, $color2, $color1);
+  display: flex;
+  flex-direction: column;
+
+  .switch-lang-box {
+    display: flex;
+    justify-content: end;
+  }
+
+  .topic-box {
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .home-button {
+      width: 5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      &:hover {
+        background-color: $color2;
+        color: white;
+      }
+    }
+  }
+
+  button {
+    width: 14rem;
+    height: 8rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      background-color: $color1;
+    }
+  }
+
+  .reverse-button {
+    width: 28rem;
+  }
+
+  .left-shape {
+    width: 0;
+    height: 0;
+    border: 2.5rem solid transparent;
+    border-left: 0;
+    border-right: 5rem solid gray;
+    margin-top: 1.5rem;
+    position: relative;
+  }
+
+  .reverse-col {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .reverse-item-up {
+      width: 0;
+      height: 0;
+      border: 2.5rem solid transparent;
+      border-top: 0;
+      border-bottom: 5rem solid gray;
+    }
+    .reverse-item-down {
+      width: 0;
+      height: 0;
+      border: 2.5rem solid transparent;
+      border-bottom: 0;
+      border-top: 5rem solid gray;
+    }
+  }
+
+  .right-shape {
+    width: 0;
+    height: 0;
+    border: 2.5rem solid transparent;
+    border-right: 0;
+    border-left: 5rem solid gray;
+    margin-top: 1.5rem;
+  }
+
+  p {
+    position: absolute;
+    color: white;
+    background-color: $color2;
+    padding: 0.2rem;
+    border-radius: 10rem;
+    top: 14.3rem;
+  }
+
+  .underline {
+    width: 58rem;
+    height: 0.1rem;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin: 2rem auto;
+  }
+}

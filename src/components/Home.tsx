@@ -14,11 +14,11 @@ export default function Home() {
           <SwitchLang />
         </div>
 
-        <div className="item1" onClick={() => navigate("/test1")}>
+        <div className="test-item1" onClick={() => navigate("/test1")}>
           <h4>{t("Test")} 1</h4>
           <p>{t("Topic1")}</p>
         </div>
-        <div className="item2">
+        <div className="test-item2" onClick={() => navigate("/test2")}>
           <h4>{t("Test")} 2</h4>
           <p>{t("Topic2")}</p>
         </div>

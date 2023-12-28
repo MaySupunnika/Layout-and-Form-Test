@@ -1,0 +1,13 @@
+$color1: #ffa200;
+$color2: #6eda78;
+
+.test2-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0.7rem;
+  background-image: linear-gradient(to right, $color2, $color1);
+  .switch-lang-box {
+    display: flex;
+    justify-content: end;
+  }
+}
