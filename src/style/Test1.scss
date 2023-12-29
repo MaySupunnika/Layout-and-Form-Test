@@ -44,8 +44,15 @@ $color2: #6eda78;
     &:hover {
       background-color: $color1;
     }
+    &:active {
+      background-color: $color2;
+    }
   }
-
+  .button-shape-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
   .reverse-button {
     width: 28rem;
   }
@@ -64,7 +71,7 @@ $color2: #6eda78;
     margin-top: 1.5rem;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     .reverse-item-up {
       width: 0;
       height: 0;
@@ -104,5 +111,68 @@ $color2: #6eda78;
     height: 0.1rem;
     background-color: rgba(128, 128, 128, 0.2);
     margin: 2rem auto;
+  }
+
+  .shape-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 1rem;
+
+    .card-shape {
+      width: 14rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+
+      // &:nth-child(-n + 3) {
+      //   margin-left: 10rem;
+      // }
+
+      &:hover {
+        background-color: $color1;
+      }
+      &:active {
+        background-color: $color2;
+      }
+    }
+
+    .hidden-card {
+      width: 1rem;
+      margin: 0;
+    }
+    .square,
+    .circle {
+      width: 5rem;
+      height: 5rem;
+      background-color: gray;
+    }
+    .circle {
+      border-radius: 50%;
+    }
+
+    .oval,
+    .rectangle,
+    .parallelogram {
+      width: 10rem;
+      height: 5rem;
+      background-color: gray;
+    }
+    .oval {
+      border-radius: 50%;
+    }
+
+    .trapezoid {
+      width: 10rem;
+      height: 0;
+      border-bottom: 4rem solid gray;
+      border-left: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+    }
+
+    .parallelogram {
+      transform: skew(20deg);
+    }
   }
 }
