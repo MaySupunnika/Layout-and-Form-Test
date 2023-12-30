@@ -1,6 +1,6 @@
 import "../style/Home.scss";
 import { useTranslation } from "react-i18next";
-import SwitchLang from "./SwitchLang";
+import SwitchLang from "../components/SwitchLang";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {

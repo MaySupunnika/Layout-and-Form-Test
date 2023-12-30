@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 export default function SwitchLang() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState<string>("en");
 
   const handlerChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -15,8 +15,8 @@ export default function SwitchLang() {
   return (
     <>
       <select onChange={handlerChangeLang} value={language}>
-        <option value="en">English</option>
-        <option value="th">ภาษาไทย</option>
+        <option value="en">{t("EN")}</option>
+        <option value="th">{t("TH")}</option>
       </select>
     </>
   );

@@ -6,8 +6,37 @@ $color2: #6eda78;
   height: 100vh;
   padding: 0.7rem;
   background-image: linear-gradient(to right, $color2, $color1);
+
   .switch-lang-box {
     display: flex;
     justify-content: end;
+  }
+
+  .topic-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+
+    .home-button {
+      width: 5rem;
+      height: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+      border-radius: 0.3rem;
+      &:hover {
+        background-color: $color2;
+        color: white;
+      }
+    }
+  }
+
+  .form-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.3rem;
   }
 }

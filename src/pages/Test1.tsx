@@ -1,5 +1,5 @@
 import "../style/Test1.scss";
-import SwitchLang from "./SwitchLang";
+import SwitchLang from "../components/SwitchLang";
 import { useTranslation } from "react-i18next";
 import { Card } from "antd";
 import { useNavigate } from "react-router-dom";
