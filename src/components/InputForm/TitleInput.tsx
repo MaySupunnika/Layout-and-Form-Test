@@ -13,9 +13,9 @@ export default function TitleInput() {
         style={{ fontWeight: "600" }}
       >
         <Select placeholder={t("title")} style={{ width: "5rem" }}>
-          <Option value="male">{t("male")}</Option>
-          <Option value="female">{t("female")}</Option>
-          <Option value="n/a">{t("n/a")}</Option>
+          <Option value="mr">{t("mr")}</Option>
+          <Option value="miss">{t("miss")}</Option>
+          <Option value="mrs">{t("mrs")}</Option>
         </Select>
       </Form.Item>
     </>

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Form, Input } from "antd";
+import { Form, Input, InputNumber } from "antd";
 
 export default function PassportInput() {
   const { t } = useTranslation();
@@ -10,7 +10,11 @@ export default function PassportInput() {
         label={t("passport")}
         style={{ fontWeight: "600" }}
       >
-        <Input style={{ width: "17.2rem" }} />
+        <InputNumber
+          style={{ width: "17.2rem" }}
+          maxLength={14}
+          controls={false}
+        />
       </Form.Item>
     </>
   );

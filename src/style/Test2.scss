@@ -2,8 +2,7 @@ $color1: #ffa200;
 $color2: #6eda78;
 
 .test2-container {
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
   padding: 0.7rem;
   background-image: linear-gradient(to right, $color2, $color1);
 
@@ -38,5 +37,12 @@ $color2: #6eda78;
     display: flex;
     justify-content: center;
     margin-top: 0.3rem;
+  }
+
+  .table-box {
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
   }
 }

@@ -6,7 +6,7 @@ export default function IDInput() {
   const { t } = useTranslation();
   return (
     <>
-      <Form.Item name="id" label={t("id")} style={{ fontWeight: "600" }}>
+      <Form.Item name="idCard" label={t("id")} style={{ fontWeight: "600" }}>
         <Space.Compact
           style={{
             width: "35rem",
