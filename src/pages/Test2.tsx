@@ -33,11 +33,13 @@ export default function Test2() {
   });
 
   const onFinish = (value: DataType) => {
-    const submission = {
+    const serializableSubmission = {
       ...value,
       key: uuid4() as React.Key,
+      dob: value.dob.toString(),
     };
-    dispatch(addSubmission(submission));
+
+    dispatch(addSubmission(serializableSubmission));
     form.resetFields();
   };
 

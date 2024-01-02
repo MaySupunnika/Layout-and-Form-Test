@@ -21,7 +21,12 @@ const submisstionsSlice = createSlice({
   initialState,
   reducers: {
     addSubmission: (state, action) => {
-      state.push(action.payload);
+      const serializableSubmission = {
+        ...action.payload,
+        dob: action.payload.dob.toString(),
+      };
+
+      state.push(serializableSubmission);
     },
     deleteOneSubmission: (state, action) => {
       const submission = action.payload;
